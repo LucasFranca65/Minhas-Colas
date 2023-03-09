@@ -1,0 +1,8 @@
+formata a datas iniciais e finais para o formato que é salvo no mongoDb
+
+var dateMax = moment(req.body.dateMax).format("YYYY-MM-DDT23:59:59.SSSZ")
+var dateMin = moment(req.body.dateMin).format("YYYY-MM-DDT00:00:00.SSSZ")
+
+realiza a consulta da seguinte forma
+
+Model.find({date: {$gte: dateMin, $lt: dateMax}})

@@ -1,0 +1,3 @@
+utiliza a função moment, necessario baixar e carregar o modulo moment do express
+
+date_exib: moment(new Date()).format('DD/MM/YYYY')

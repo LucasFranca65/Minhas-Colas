@@ -1,0 +1,1 @@
+variavel_com_valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })

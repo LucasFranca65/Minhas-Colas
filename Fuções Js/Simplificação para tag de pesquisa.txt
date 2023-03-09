@@ -1,0 +1,14 @@
+function simplify(text){
+    const regex = /[\s,\.;:\(\)\-'\+]/
+    return text.toUpperCase().split(regex)
+}
+
+como utilizar 
+Ex:
+Object = {
+	texto : "texto como exemplo"			
+	textoSimplificado : simplify("texto como exemplo")
+}
+
+Apos simplificação o texto será armazenado em um arrey da seguinte forma 
+["TEXTO", "COMO", "EXEMPLO"]
